@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  background-color: aquamarine;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Profile Section */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ppimg {
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgb(10, 111, 111);
+  border-radius: 50%;
+}
+
+.bio {
+  flex: 1;
+  padding: 20px;
+}
+
+.contract {
+  padding: 20px;
+}
+.contract ul {
+  list-style: none;
+}
+.contract a {
+  text-decoration: none;
+}
+.contract a:hover {
+  text-decoration: underline;
+  color: tomato;
+}
+
+hr,
+.common-hr,
+.final-hr {
+  border: 1px solid black;
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* Sections Layout */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.left-div {
+  flex: 1 1 300px;
+}
+
+.right-div {
+  flex: 2 1 500px;
+}
+
+.left-templete,
+.right-templete {
+  flex: 1 1 300px;
+}
+
+.left-templete a:hover,
+.right-templete a:hover {
+  text-decoration: underline;
+  color: rgb(239, 4, 4);
+}
+
+/* Honors */
+#honor-section .content .right-div ul {
+  list-style: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(11, 55, 94);
+  margin-top: 20px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer a {
+  color: #d29016;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: tomato;
+}
+footer p {
+  color: white;
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio,
+  .contract {
+    padding: 10px;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .left-div,
+  .right-div,
+  .left-templete,
+  .right-templete {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ppimg {
+    width: 90px;
+    height: 90px;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Thank You. This was my first project using HTML and CSS & I'm enjoying it a lot. */
